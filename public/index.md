@@ -4,7 +4,10 @@ title: Gladstar Gifted and Talented School
 
 # Home Based School Programme
 
-`Facilitating Functional [Education] For The Next Innovators, Entrepreneurs and Leaders.(https://www.gladstar.sch.ng).
+`Facilitating Functional Education For The Next Innovators, Entrepreneurs and Leaders.
+
+[Sign up/Sign in] ('./hooks/auth')
+
 
 ## Features
 

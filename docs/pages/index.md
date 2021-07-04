@@ -1,18 +1,18 @@
 ---
-title: Introduction
+title: Gladstar Gifted and Talented School
 ---
 
-# react-supabase
+# Home Based School Programme
 
-`react-supabase` is a React Hooks library for [Supabase](https://supabase.io).
+`Facilitating Functional [Education] For The Next Innovators, Entrepreneurs and Leaders.(https://www.gladstar.sch.ng).
 
 ## Features
 
-- Support for auth, data, realtime, and storage
-- Automatically manages internal state
-- TypeScript ready
-- Zero-dependencies
+- Scheduled and Flexible Class. 
+- Free Counseling Chat.
+- Opportunity for peer-peer discussion.
+- Robust monitoring and evaluation.
 
 ## Community
 
-Feel free to join the [discussions on GitHub](https://github.com/tmm/react-supabase/discussions)!
+Feel free to join the [discussions on Discord](https://discord.gg/MKCxutYd)!

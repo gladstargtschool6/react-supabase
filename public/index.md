@@ -2,11 +2,11 @@
 title: Gladstar Gifted and Talented School
 ---
 
-# Home Based School Programme
+# Gladstar Gifted and Talented School
 
 `Facilitating Functional Education For The Next Innovators, Entrepreneurs and Leaders.
 
-[Sign up/Sign in] ('./hooks/auth')
+[Sign up/Sign in]('./hooks/auth')
 
 
 ## Features

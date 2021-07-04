@@ -11,7 +11,7 @@ title: Gladstar Gifted and Talented School
 
 ## Features
 
-- Scheduled and Flexible Class. 
+- Scheduled, Interactive and Flexible Class. 
 - Free Counseling Chat.
 - Opportunity for peer-peer discussion.
 - Robust monitoring and evaluation.

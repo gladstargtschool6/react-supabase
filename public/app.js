@@ -1,10 +1,10 @@
 
 <script>
 // Get the video
-var video = document.getElementById("myVideo");
+var video = document.getElementById("video-container");
 
 // Get the button
-var btn = document.getElementById("myBtn");
+var btn = document.getElementById("switch-btn");
 
 // Pause and play the video, and change the button text
 function myFunction() {

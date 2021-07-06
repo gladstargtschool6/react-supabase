@@ -28,58 +28,28 @@
   <body>
 <h1 id="gladstar-gifted-and-talented-school">Gladstar Gifted and Talented School</h1>
 <p>`Facilitating Functional Education For The Next Innovators, Entrepreneurs and Leaders.</p>
-
-<script src="index.ts"></script>
-
-<script>import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { useDispatch, useSelector } from 'react-redux';
-
-import { userActions } from '../_actions';
-
-function HomePage() {
-    const users = useSelector(state => state.users);
-    const user = useSelector(state => state.authentication.user);
-    const dispatch = useDispatch();
-
-    useEffect(() => {
-        dispatch(userActions.getAll());
-    }, []);
-
-    function handleDeleteUser(id) {
-        dispatch(userActions.delete(id));
-    }
-
-    return (
-        <div className="col-lg-8 offset-lg-2">
-            <h1>Hi {user.firstName}!</h1>
-            <p>You're logged in with React Hooks!!</p>
-            <h3>All registered users:</h3>
-            {users.loading && <em>Loading users...</em>}
-            {users.error && <span className="text-danger">ERROR: {users.error}</span>}
-            {users.items &&
-                <ul>
-                    {users.items.map((user, index) =>
-                        <li key={user.id}>
-                            {user.firstName + ' ' + user.lastName}
-                            {
-                                user.deleting ? <em> - Deleting...</em>
-                                : user.deleteError ? <span className="text-danger"> - ERROR: {user.deleteError}</span>
-                                : <span> - <a onClick={() => handleDeleteUser(user.id)} className="text-primary">Delete</a></span>
-                            }
-                        </li>
-                    )}
-                </ul>
-            }
-            <p>
-                <Link to="/login">Logout</Link>
-            </p>
-        </div>
-    );
-}
-
-export { HomePage };
-</script>
+    <!---header---->
+        <header>
+            <video class="video-container"  muted autoplay loop>
+                <source src="https://youtu.be/tF4j_C9vDpc" type="video.mp4"
+            </video>
+        </header>
+  <h2> Gladstar Gifted and Talented School video</h2>
+ <!--- video switch ---->
+<button class="switch-btn>
+    <span>
+      play
+    </span>
+    <span>
+      pause
+    </span>
+    <span class="switch"> </span>
+</button>
+</header>
+  
+ <!---- javascript --->
+ <script src="app.js"></script>         
+ 
 <h3 id="features">Features</h3>
 <ul>
 <li>Scheduled, Interactive and Flexible Class.(Online/Offline) </li>

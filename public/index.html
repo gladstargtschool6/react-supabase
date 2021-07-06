@@ -9,6 +9,17 @@
     />
     <meta name="theme-color" content="#000000" />
     <!--
+      manifest.json <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/https://github.com/gladstargtschool6/react-supabase/blob/main/public/FB_IMG_4498315157166213631.jpg" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
@@ -24,50 +35,74 @@
     -->
     <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"crossorigin></script>
     <title>Gladstar Gifted and Talented School</title>
-  <style>
-  header {
-     min-header: 100;
-     position: relative;
-     display: grid;
-     place items: center;
-  }
- .video-container {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-  /* z-index: -2; */
-  h2 {
-     color: var --clr-white;
-  }
-  /* switch button */
- </style>
   </head>
   <body>
 <h1 id="gladstar-gifted-and-talented-school">Gladstar Gifted and Talented School</h1>
 <p>`Facilitating Functional Education For The Next Innovators, Entrepreneurs and Leaders.</p>
-    <!---header---->
-        <header>
-            <video class="video-container"  muted autoplay loop>
-                <source src="https://youtu.be/tF4j_C9vDpc" type="video.mp4"
-            </video>
-        </header>
-  <h2> Gladstar Gifted and Talented School video</h2>
- <!--- video switch ---->
-<button class="switch-btn>
-    <span>
-      play
-    </span>
-    <span>
-      pause
-    </span>
-    <span class="switch"> </span>
-</button>
-</header>
-  
- <!---- javascript --->
- <script src="app.js"></script>         
+<!-- The video -->
+<video autoplay muted loop id="myVideo">
+  <source src="https://youtu.be/tF4j_C9vDpc" type="video/mp4">
+</video>
+
+<!-- Optional: some overlay text to describe the video -->
+<div class="content">
+  <!-- Use a button to pause/play the video with JavaScript -->
+  <button id="myBtn" onclick="myFunction()">Pause</button>
+</div>
+<style>
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/* Add some content at the bottom of the video/page */
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style the button used to pause/play the video */
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
+}
+</style>
+<script>
+// Get the video
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+  if (video.paused) {
+    video.play();
+    btn.innerHTML = "Pause";
+  } else {
+    video.pause();
+    btn.innerHTML = "Play";
+  }
+}
+</script>
  
 <h3 id="features">Features</h3>
 <ul>
@@ -76,7 +111,7 @@
 <li>Opportunity for peer-peer discussion.</li>
 <li>Robust monitoring and evaluation.</li>
 </ul>
-<h2 id="community">Community</h2>
+<h4 id="community">Community</h4>
 <p>Feel free to join the <a href="https://discord.gg/MKCxutYd">discussions on Discord</a></p>
 
   </body>

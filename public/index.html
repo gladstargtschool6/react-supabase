@@ -100,7 +100,27 @@ function myFunction() {
 <li>Opportunity for peer-peer discussion.</li>
 <li>Robust monitoring and evaluation.</li>
 </ul>
-<h4 id="community">Community</h4>
+<h4 id="SignUp">SignUp</h5>
+<div>
+   
+  // Sign in with email
+  const { user, error } = await supabase.auth.signIn({
+    email: 'example@email.com',
+    password: 'example-password',
+  })
+</di>
+<h5 id="Signup">SignUp</h5>
+<div>
+
+  // Sign in with GitHub
+  // And request extra permissions!
+  const { user, error } = await supabase.auth.signIn({
+    provider: 'google', facebook, discord, github,
+  }, {
+    scopes: 'repo gist notifications'
+  })
+</div>
+<h6 id="community">Community</h6>
 <p>Feel free to join the <a href="https://discord.gg/MKCxutYd">discussions on Discord</a></p>
 
   </body>

@@ -102,16 +102,17 @@ function myFunction() {
 </ul>
 <h4 id="SignUp">SignUp</h5>
 <div>
-   
+   <script>
   // Sign in with email
   const { user, error } = await supabase.auth.signIn({
     email: 'example@email.com',
     password: 'example-password',
   })
+  </script>
 </di>
 <h5 id="Signup">SignUp</h5>
 <div>
-
+ <script>
   // Sign in with GitHub
   // And request extra permissions!
   const { user, error } = await supabase.auth.signIn({
@@ -119,6 +120,7 @@ function myFunction() {
   }, {
     scopes: 'repo gist notifications'
   })
+ </script>
 </div>
 <h6 id="community">Community</h6>
 <p>Feel free to join the <a href="https://discord.gg/MKCxutYd">discussions on Discord</a></p>
